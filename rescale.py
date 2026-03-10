@@ -5,6 +5,7 @@ def rescale_frame(frame, scale = 0.75):
 
     # Rescaling the Width of the original frame
     width = int(frame.shape[1] * scale)
+    
 
     # Rescaling the Height of the original frame
     height = int(frame.shape[0] * scale)
@@ -27,17 +28,16 @@ def read_img():
     # Read image from the local path
     img = cv.imread('images/img_1.jpg')
 
-    img_resized = rescale_frame(img)
+    img_resized = rescale_frame(img, 0.5)
 
     # Display image using in-built window
-    cv.imshow("IMAGE", img)
+    cv.imshow("ORIGINAL IMAGE", img)
 
     # Display Resized image using in-built window
     cv.imshow("RESIZED IMAGE", img_resized)
 
     # Wait until a Keyboard input to complete code execution
     cv.waitKey(0)
-
 
 # Video Reading & Displaying
 def read_vid():
@@ -70,4 +70,4 @@ def read_vid():
     cv.destroyAllWindows()
 
 read_img()
-read_vid()
+# read_vid()

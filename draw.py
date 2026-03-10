@@ -11,12 +11,12 @@ cv.imshow("BLANK", blank)
 # cv.imshow('COLOURED', blank)
 
 # 2. Draw a Rectangle on the image
-# cv.rectangle(blank, (0,0), (100,100), (0,250,0), thickness=2) # Rectangle Border Thickness(2)
+# cv.rectangle(blank, (20,20), (100,100), (0,250,0), thickness=2) # Rectangle Border Thickness(2)
 # cv.rectangle(blank, (0,0), (100,100), (0,250,0), thickness=cv.FILLED) # Rectangle Fill Color
 # cv.imshow('RECTANGLE', blank)
 
 # 3. Draw a Circle on the image
-# cv.circle(blank, (blank.shape[1]//2, blank.shape[0]//2), 40, (0, 0, 255), thickness=-1)
+# cv.circle(blank, (blank.shape[1]//2, blank.shape[0]//2), 200, (0, 0, 255), thickness=0)
 # cv.imshow('CIRCLE', blank)
 
 # 4. Draw a Line on the image
